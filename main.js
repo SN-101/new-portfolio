@@ -36,7 +36,7 @@ const projects = [
     },
     {
         title: 'CV Online',
-        description: 'An elegantly minimal, pure HTML and CSS personal showcase crafted with precision and intention—no JavaScript involved. Featuring a clean layout, responsive design, and thoughtful typography, this site reflects my early web development skills in structuring content and design cohesively. It’s a polished, lightweight portfolio that demonstrates foundational front‑end expertise.',
+        description: 'Designed and developed an interactive online CV using HTML, CSS, JavaScript, Bootstrap, and JSON. The website is fully responsive and supports multiple languages(Arabic, French, English) via a dynamic JSON- based system.It professionally showcases my skills, education, and experiences.',
         technologies: ['HTML', 'CSS', 'Javascript', 'JSON'],
         github: 'https://github.com/SN-101/cv-online',
         live: 'https://sn-101.github.io/cv-online/',
@@ -193,7 +193,6 @@ function populateProjects() {
     });
 }
 
-
 const downBtn = document.getElementById("download-btn");
 const svgBtn = document.getElementById("mysvg");
 const textBtn = document.getElementById("btn-text");
@@ -243,10 +242,6 @@ function downloadingBtnCv() {
 
 downloadingBtnCv();
 
-
-
-
-
 // Initialize scroll animations
 function initializeScrollAnimations() {
     const observerOptions = {
@@ -276,51 +271,6 @@ function initializeScrollAnimations() {
         observer.observe(card);
     });
 }
-
-
-// Initialize contact form
-// function initializeContactForm() {
-//     contactForm.addEventListener('submit', function (e) {
-//         e.preventDefault();
-
-//         // Get form data
-//         const formData = new FormData(contactForm);
-//         const name = formData.get('name');
-//         const email = formData.get('email');
-//         const message = formData.get('message');
-
-//         // Simple validation
-//         if (!name || !email || !message) {
-//             alert('Please fill in all fields.');
-//             return;
-//         }
-
-//         // Simulate form submission
-//         const submitBtn = contactForm.querySelector('.submit-btn');
-//         const originalText = submitBtn.textContent;
-
-//         submitBtn.textContent = 'Sending...';
-//         submitBtn.disabled = true;
-        
-//         emailjs.init("vAodR1HFl2lZJYfhe");
-//         document.getElementById("contact-form").addEventListener("submit", function (e) {
-//             e.preventDefault();
-//             emailjs.sendForm("service_l5me3sl", "template_p5v3tjt", this)
-//                 .then(function () {
-//                     alert("✅ تم إرسال الرسالة!");
-//                 }, function (error) {
-//                     alert("❌ فشل الإرسال: " + error.text);
-//                 });
-//         });
-
-//         setTimeout(() => {
-//             alert('Thank you for your message! I\'ll get back to you soon.');
-//             contactForm.reset();
-//             submitBtn.textContent = originalText;
-//             submitBtn.disabled = false;
-//         }, 1000);
-//     });
-// }
 
 function initializeContactForm() {
     const contactForm = document.getElementById('contact-form');
