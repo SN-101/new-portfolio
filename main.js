@@ -57,7 +57,7 @@ const projects = [
         github: 'https://github.com/Municipality-of-Ksar-Toulal/front-end',
         live: 'https://municipality-of-ksar-toulal.github.io/front-end/',
         image: 'documents/Municipality ksar Toulal.png'
-    },  
+    },
 ];
 
 // DOM elements
@@ -313,6 +313,21 @@ function initializeContactForm() {
             });
     });
 }
+
+function handWriting() {
+    new Vivus('hero-title-svg', {
+        type: 'delayed',
+        duration: 500,
+        start: 'autostart',
+        animTimingFunction: Vivus.EASE
+    }, function () {
+        setTimeout(() => {
+            handWriting();
+        }, 1000);
+    });
+}
+
+handWriting();
 
 // Make scrollToSection available globally
 window.scrollToSection = scrollToSection;
