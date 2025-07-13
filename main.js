@@ -330,11 +330,9 @@ handWriting();
 
 
 window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-0ZVWNKG7QM');
-
-
 // Make scrollToSection available globally
 window.scrollToSection = scrollToSection;
+
+function gtag() { dataLayer.push(arguments); }
+gtag('js', new Date());
+gtag('config', 'G-0ZVWNKG7QM');
