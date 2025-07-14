@@ -301,7 +301,7 @@ function initializeContactForm() {
         submitBtn.disabled = true;
 
         //  send to Google Sheets by Webhook
-        fetch('https://script.google.com/macros/s/YOUR_SCRIPT_ID/exec', {
+        fetch('https://script.google.com/macros/s/AKfycbzAfo7hYU6RAcCh8xW7pmh39PIv4iyYGOORJtHqGBivCaEVbOU1wmIK0dvqxbIb7JUX/exec', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
