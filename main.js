@@ -300,10 +300,22 @@ function initializeContactForm() {
         submitBtn.textContent = 'Sending...';
         submitBtn.disabled = true;
 
-        // Initialize EmailJS
+        //  send to Google Sheets by Webhook
+        fetch('https://script.google.com/macros/s/YOUR_SCRIPT_ID/exec', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({
+                name: name,
+                email: email,
+                message: message
+            })
+        });
+
+        // send to my email by EmailJS
         emailjs.init("vAodR1HFl2lZJYfhe");
 
-        // Send form via EmailJS
         emailjs.sendForm("service_l5me3sl", "template_p5v3tjt", contactForm)
             .then(function () {
                 alert('Thank you for your message! I\'ll get back to you soon.');
@@ -317,6 +329,7 @@ function initializeContactForm() {
             });
     });
 }
+
 
 function handWriting() {
     new Vivus('hero-title-svg', {
