@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://sn-101.github.io/new-portfolio/sitemap.xml

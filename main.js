@@ -32,7 +32,8 @@ const projects = [
         technologies: ['HTML', 'CSS'],
         github: 'https://github.com/SN-101/portfolio',
         live: 'https://sn-101.github.io/portfolio/',
-        image: 'documents/my first portfolio.png'
+        image: 'documents/my first portfolio.png',
+        altimg: 'Picture of my first portfolio'
     },
     {
         title: 'CV Online',
@@ -40,7 +41,8 @@ const projects = [
         technologies: ['HTML', 'CSS', 'Javascript', 'JSON'],
         github: 'https://github.com/SN-101/cv-online',
         live: 'https://sn-101.github.io/cv-online/',
-        image: 'documents/cv online.png'
+        image: 'documents/cv online.png',
+        altimg: 'Picture of my CV online'
     },
     {
         title: 'Web Page Game',
@@ -48,7 +50,8 @@ const projects = [
         technologies: ['HTML', 'CSS', 'JavaScript'],
         github: 'https://github.com/SN-101/Childhood-Game',
         live: 'https://sn-101.github.io/Childhood-Game/',
-        image: 'documents/Rock, Paper, Scissors.png'
+        image: 'documents/Rock, Paper, Scissors.png',
+        altimg: 'Picture of page game'
     },
     {
         title: 'Municipality ksar Toulal Website',
@@ -56,7 +59,8 @@ const projects = [
         technologies: ['HTML', 'CSS', 'JavaScript', 'JSON'],
         github: 'https://github.com/Municipality-of-Ksar-Toulal/front-end',
         live: 'https://municipality-of-ksar-toulal.github.io/front-end/',
-        image: 'documents/Municipality ksar Toulal.png'
+        image: 'documents/Municipality ksar Toulal.png',
+        altimg: 'Picture of page Municipality ksar Toulal Website'
     },
 ];
 
@@ -162,7 +166,7 @@ function populateProjects() {
 
         projectCard.innerHTML = `
             <div class="project-image">
-                <img src="${project.image}" alt="${project.title}" loading="lazy">
+                <img src="${project.image}" alt="${project.altimg}" loading="lazy">
             </div>
             <div class="project-content">
                 <h3 class="project-title">${project.title}</h3>
