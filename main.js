@@ -300,22 +300,10 @@ function initializeContactForm() {
         submitBtn.textContent = 'Sending...';
         submitBtn.disabled = true;
 
-        //  send to Google Sheets by Webhook
-        fetch('https://script.google.com/macros/s/AKfycbzAfo7hYU6RAcCh8xW7pmh39PIv4iyYGOORJtHqGBivCaEVbOU1wmIK0dvqxbIb7JUX/exec', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json'
-            },
-            body: JSON.stringify({
-                name: name,
-                email: email,
-                message: message
-            })
-        });
-
-        // send to my email by EmailJS
+        // Initialize EmailJS
         emailjs.init("vAodR1HFl2lZJYfhe");
 
+        // Send form via EmailJS
         emailjs.sendForm("service_l5me3sl", "template_p5v3tjt", contactForm)
             .then(function () {
                 alert('Thank you for your message! I\'ll get back to you soon.');
@@ -350,6 +338,7 @@ window.dataLayer = window.dataLayer || [];
 // Make scrollToSection available globally
 window.scrollToSection = scrollToSection;
 
+// analytics
 function gtag() { dataLayer.push(arguments); }
 gtag('js', new Date());
 gtag('config', 'G-0ZVWNKG7QM');
