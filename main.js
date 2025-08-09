@@ -304,7 +304,7 @@ function initializeContactForm() {
         emailjs.init("vAodR1HFl2lZJYfhe");
 
         // Send form via EmailJS
-        emailjs.sendForm("service_l5me3sl", "template_p5v3tjt", contactForm)
+        emailjs.sendForm("service_gtnl9z6", "template_p5v3tjt", contactForm)
             .then(function () {
                 alert('Thank you for your message! I\'ll get back to you soon.');
                 contactForm.reset();
