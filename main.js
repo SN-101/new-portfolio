@@ -55,7 +55,7 @@ const projects = [
     },
     {
         title: 'Municipality ksar Toulal Website',
-        description: 'A full-stack e-commerce solution built with modern web technologies, featuring user authentication, payment integration, and admin dashboard.',
+        description: 'I helped design and develop the first official website for the Municipality of Ksar Toulal, creating a responsive, multilingual platform in HTML, CSS, JavaScript, and JSON without external frameworks, and continued work beyond my internship, gaining experience in public sector digital transformation.',
         technologies: ['HTML', 'CSS', 'JavaScript', 'JSON'],
         github: 'https://github.com/Municipality-of-Ksar-Toulal/front-end',
         live: 'https://municipality-of-ksar-toulal.github.io/front-end/',
