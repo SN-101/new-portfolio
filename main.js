@@ -53,7 +53,7 @@ const projects = [
         technologies: ['HTML', 'CSS', 'Javascript', 'JSON'],
         github: 'https://github.com/SN-101/cv-online',
         live: 'https://sn-101.github.io/cv-online/',
-        image: 'documents/cv online.webp',
+        image: 'documents/CV online.webp',
         altimg: 'Picture of my CV online'
     },
     {
