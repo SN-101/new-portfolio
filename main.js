@@ -92,6 +92,13 @@ const projects = [
         image: 'documents/Online Store.webp',
         altimg: 'Picture of page Online Store Website'
     },
+    {
+        title: 'Frigo Slimani ERP',
+        description: 'A professional desktop application for managing cold storage facilities, built with Python/PyQt5 and an encrypted SQLite database (AES-256). It includes operations management, PDF invoicing, reporting, and a permissions system. Packaged as a deployable, no-install executable (.exe) file.',
+        technologies: ['Python', 'PyQt5','SQLite', 'AES-256', 'Nuitka'],
+        image: 'documents/FrigoSlimaniERP.webp',
+        altimg: 'Dashbord screen'
+    },
 ];
 
 // DOM elements
