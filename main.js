@@ -1,10 +1,12 @@
-// Icon SVGs
+// =========================================
+// 1. Data & Icons
+// =========================================
 const icons = {
-    vsc: '<svg width="35px" height="35px" viewBox="-2.4 -2.4 28.80 28.80" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#ffffff" transform="rotate(0)matrix(1, 0, 0, 1, 0, 0)"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M0.228341 8.36915C0.228341 8.36915 -0.356212 7.94324 0.345251 7.37453L1.97956 5.89736C1.97956 5.89736 2.44721 5.40004 2.94164 5.83334L18.0231 17.375V22.9094C18.0231 22.9094 18.0158 23.7785 16.9124 23.6825L0.228341 8.36915Z" fill="#fff"></path> <path d="M4.11555 11.9367L0.228273 15.5089C0.228273 15.5089 -0.171172 15.8093 0.228273 16.346L2.03308 18.0053C2.03308 18.0053 2.46175 18.4706 3.09502 17.9413L7.21611 14.7827L4.11555 11.9367Z" fill="#fff"></path> <path d="M10.94 11.9661L18.0691 6.46362L18.0228 0.95865C18.0228 0.95865 17.7183 -0.242793 16.7027 0.382548L7.21589 9.11025L10.94 11.9661Z" fill="#fff"></path> <path d="M16.9121 23.69C17.3261 24.1183 17.8279 23.978 17.8279 23.978L23.3838 21.2108C24.0951 20.7208 23.9952 20.1127 23.9952 20.1127V3.58803C23.9952 2.86175 23.2596 2.61063 23.2596 2.61063L18.4441 0.264377C17.3919 -0.392968 16.7027 0.382548 16.7027 0.382548C16.7027 0.382548 17.5892 -0.262484 18.0228 0.95865L18.0228 22.8086C18.0228 22.9588 17.9911 23.1065 17.9278 23.2394C17.8011 23.4979 17.5259 23.7392 16.8658 23.6383L16.9121 23.69Z" fill="#fff"></path> </g></svg>',
-    html: '<svg fill="#ffffff" width="35px" height="35px" viewBox="0 0 1024.00 1024.00" xmlns="http://www.w3.org/2000/svg" class="icon" stroke="#ffffff" stroke-width="0.01024"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="#CCCCCC" stroke-width="83.96799999999999"></g><g id="SVGRepo_iconCarrier"> <path d="M145 96l66 746.6L511.8 928l299.6-85.4L878.7 96H145zm610.9 700.6l-244.1 69.6-245.2-69.6-56.7-641.2h603.8l-57.8 641.2zM281 249l1.7 24.3 22.7 253.5h206.5v-.1h112.9l-11.4 118.5L511 672.9v.2h-.8l-102.4-27.7-6.5-73.2h-91l11.3 144.7 188.6 52h1.7v-.4l187.7-51.7 1.7-16.3 21.2-242.2 3.2-24.3H511v.2H389.9l-8.2-94.2h352.1l1.7-19.5 4.8-47.2L742 249H511z"></path> </g>',
+    vsc: '<svg width="35px" height="35px" viewBox="-2.4 -2.4 28.80 28.80" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M0.228341 8.36915C0.228341 8.36915 -0.356212 7.94324 0.345251 7.37453L1.97956 5.89736C1.97956 5.89736 2.44721 5.40004 2.94164 5.83334L18.0231 17.375V22.9094C18.0231 22.9094 18.0158 23.7785 16.9124 23.6825L0.228341 8.36915Z" fill="#fff"></path> <path d="M4.11555 11.9367L0.228273 15.5089C0.228273 15.5089 -0.171172 15.8093 0.228273 16.346L2.03308 18.0053C2.03308 18.0053 2.46175 18.4706 3.09502 17.9413L7.21611 14.7827L4.11555 11.9367Z" fill="#fff"></path> <path d="M10.94 11.9661L18.0691 6.46362L18.0228 0.95865C18.0228 0.95865 17.7183 -0.242793 16.7027 0.382548L7.21589 9.11025L10.94 11.9661Z" fill="#fff"></path> <path d="M16.9121 23.69C17.3261 24.1183 17.8279 23.978 17.8279 23.978L23.3838 21.2108C24.0951 20.7208 23.9952 20.1127 23.9952 20.1127V3.58803C23.9952 2.86175 23.2596 2.61063 23.2596 2.61063L18.4441 0.264377C17.3919 -0.392968 16.7027 0.382548 16.7027 0.382548C16.7027 0.382548 17.5892 -0.262484 18.0228 0.95865L18.0228 22.8086C18.0228 22.9588 17.9911 23.1065 17.9278 23.2394C17.8011 23.4979 17.5259 23.7392 16.8658 23.6383L16.9121 23.69Z" fill="#fff"></path> </g></svg>',
+    html: '<svg fill="#ffffff" width="35px" height="35px" viewBox="0 0 1024.00 1024.00" xmlns="http://www.w3.org/2000/svg" class="icon" stroke="#ffffff" stroke-width="0.01024"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="#CCCCCC" stroke-width="83.96799999999999"></g><g id="SVGRepo_iconCarrier"> <path d="M145 96l66 746.6L511.8 928l299.6-85.4L878.7 96H145zm610.9 700.6l-244.1 69.6-245.2-69.6-56.7-641.2h603.8l-57.8 641.2zM281 249l1.7 24.3 22.7 253.5h206.5v-.1h112.9l-11.4 118.5L511 672.9v.2h-.8l-102.4-27.7-6.5-73.2h-91l11.3 144.7 188.6 52h1.7v-.4l187.7-51.7 1.7-16.3 21.2-242.2 3.2-24.3H511v.2H389.9l-8.2-94.2h352.1l1.7-19.5 4.8-47.2L742 249H511z"></path> </g></svg>',
     css: '<svg width="35px" height="35px" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg" fill="#ffffff"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <title>css</title> <g id="Layer_2" data-name="Layer 2"> <g id="invisible_box" data-name="invisible box"> <rect width="48" height="48" fill="none"></rect> </g> <g id="Q3_icons" data-name="Q3 icons"> <path d="M24,46,8.3,41.7,5,4H43L39.7,41.7ZM12,38.6l12,3.3,12-3.3L38.6,8H9.4Z"></path> <path d="M14,13H34L32.2,34.3,23.9,37l-8.4-2.1-.9-7.2h4.5v3.6l4.8.9,4.4-.9V25.9H14.6l-.3-4.5a2.3,2.3,0,0,1,1.5-.6c6.9,0,12.5.6,12.5.6V17.8H14.6Z"></path> </g> </g> </g></svg>',
-    js: '<svg fill="#ffffff" width="35px" height="35px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <title>javascript</title> <path d="M17.313 14.789h-2.809c0 2.422-0.011 4.829-0.011 7.254 0.033 0.329 0.051 0.712 0.051 1.099 0 0.81-0.081 1.601-0.236 2.365l0.013-0.076c-0.412 0.861-1.475 0.751-1.957 0.6-0.451-0.242-0.808-0.609-1.031-1.055l-0.006-0.014c-0.044-0.094-0.097-0.174-0.16-0.246l0.001 0.001-2.281 1.406c0.367 0.79 0.934 1.434 1.637 1.885l0.018 0.011c0.763 0.427 1.675 0.678 2.645 0.678 0.484 0 0.954-0.063 1.401-0.18l-0.038 0.009c0.988-0.248 1.793-0.89 2.254-1.744l0.009-0.019c0.359-0.914 0.566-1.973 0.566-3.080 0-0.388-0.026-0.77-0.075-1.145l0.005 0.044c0.015-2.567 0-5.135 0-7.722zM28.539 23.843c-0.219-1.368-1.11-2.518-3.753-3.59-0.92-0.431-1.942-0.731-2.246-1.425-0.063-0.158-0.099-0.341-0.099-0.532 0-0.124 0.015-0.244 0.044-0.359l-0.002 0.010c0.208-0.55 0.731-0.935 1.343-0.935 0.199 0 0.388 0.040 0.559 0.113l-0.009-0.004c0.552 0.19 0.988 0.594 1.215 1.112l0.005 0.013c1.292-0.845 1.292-0.845 2.193-1.406-0.216-0.369-0.459-0.689-0.734-0.977l0.002 0.002c-0.767-0.814-1.852-1.32-3.056-1.32-0.171 0-0.34 0.010-0.505 0.030l0.020-0.002-0.881 0.111c-0.856 0.194-1.587 0.639-2.133 1.252l-0.003 0.004c-0.535 0.665-0.859 1.519-0.859 2.449 0 1.279 0.613 2.415 1.56 3.131l0.010 0.007c1.706 1.275 4.2 1.555 4.519 2.755 0.3 1.462-1.087 1.931-2.457 1.762-0.957-0.218-1.741-0.83-2.184-1.652l-0.009-0.017-2.287 1.313c0.269 0.536 0.607 0.994 1.011 1.385l0.001 0.001c2.174 2.194 7.61 2.082 8.586-1.255 0.113-0.364 0.178-0.782 0.178-1.215 0-0.3-0.031-0.593-0.091-0.875l0.005 0.028zM1.004 1.004h29.991v29.991h-29.991z"></path> </g></svg>',
-    bootstrap: '<svg width="35px" height="35px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke=""><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path fill-rule="evenodd" clip-rule="evenodd" d="M4.98488 2C3.61546 2 2.60217 3.19858 2.64753 4.49844C2.69105 5.74725 2.63451 7.36461 2.22732 8.68359C1.81892 10.0064 1.1282 10.8444 0 10.952V12.1666C1.1282 12.2742 1.81892 13.1122 2.22732 14.4351C2.63451 15.754 2.69105 17.3714 2.64753 18.6202C2.60217 19.9199 3.61546 21.1186 4.98508 21.1186H19.0169C20.3864 21.1186 21.3995 19.9201 21.3541 18.6202C21.3106 17.3714 21.3671 15.754 21.7743 14.4351C22.1829 13.1122 22.8718 12.2742 24 12.1666V10.952C22.8718 10.8444 22.1829 10.0064 21.7743 8.68359C21.3671 7.36481 21.3106 5.74725 21.3541 4.49844C21.3995 3.19878 20.3864 2 19.0169 2H4.98468H4.98488ZM16.2712 13.7687C16.2712 15.5586 14.9361 16.6441 12.7206 16.6441H8.94915C8.84127 16.6441 8.7378 16.6012 8.66152 16.5249C8.58523 16.4486 8.54237 16.3452 8.54237 16.2373V6.88136C8.54237 6.77347 8.58523 6.67001 8.66152 6.59372C8.7378 6.51743 8.84127 6.47458 8.94915 6.47458H12.6991C14.5464 6.47458 15.7588 7.47525 15.7588 9.01166C15.7588 10.09 14.9433 11.0555 13.9041 11.2245V11.2809C15.3187 11.4361 16.2712 12.4156 16.2712 13.7687ZM12.3094 7.76407H10.1589V10.8015H11.9701C13.3702 10.8015 14.1423 10.2377 14.1423 9.2299C14.1423 8.28556 13.4784 7.76407 12.3094 7.76407ZM10.1589 12.0068V15.3542H12.3885C13.8462 15.3542 14.6184 14.7692 14.6184 13.6699C14.6184 12.5704 13.8246 12.0066 12.2947 12.0066H10.1589V12.0068Z" fill="#fff"></path> </g></svg>',
+    js: '<svg fill="#ffffff" width="35px" height="35px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <title>javascript</title> <path d="M17.313 14.789h-2.809c0 2.422-0.011 4.829-0.011 7.254 0.033 0.329 0.051 0.712 0.051 1.099 0 0.81-0.081 1.601-0.236 2.365l0.013-0.076c-0.412 0.861-1.475 0.751-1.957 0.6-0.451-0.242-0.808-0.609-1.031-1.055l-0.006-0.014c-0.044-0.094-0.097-0.174-0.16-0.246l0.001 0.001-2.281 1.406c0.367 0.79 0.934 1.434 1.637 1.885l0.018 0.011c0.763 0.427 1.675 0.678 2.645 0.678 0.484 0 0.954-0.063 1.401-0.18l-0.038 0.009c0.988-0.248 1.793-0.89 2.254-1.744l0.009-0.019c0.359-0.914 0.566-1.973 0.566-3.080 0-0.388-0.026-0.77-0.075-1.145l0.005 0.044c0.015-2.567 0-5.135 0-7.722zM28.539 23.843c-0.219-1.368-1.11-2.518-3.753-3.59-0.92-0.431-1.942-0.731-2.246-1.425-0.063-0.158-0.099-0.341-0.099-0.532 0-0.124 0.015-0.244 0.044-0.359l-0.002 0.010c0.208-0.55 0.731-0.935 1.343-0.935 0.199 0 0.388 0.04 0.559 0.113l-0.009-0.004c0.552 0.19 0.988 0.594 1.215 1.112l0.005 0.013c1.292-0.845 1.292-0.845 2.193-1.406-0.216-0.369-0.459-0.689-0.734-0.977l0.002 0.002c-0.767-0.814-1.852-1.32-3.056-1.32-0.171 0-0.34 0.01-0.505 0.03l0.02-0.002-0.881 0.111c-0.856 0.194-1.587 0.639-2.133 1.252l-0.003 0.004c-0.535 0.665-0.859 1.519-0.859 2.449 0 1.279 0.613 2.415 1.56 3.131l0.01 0.007c1.706 1.275 4.2 1.555 4.519 2.755 0.3 1.462-1.087 1.931-2.457 1.762-0.957-0.218-1.741-0.83-2.184-1.652l-0.009-0.017-2.287 1.313c0.269 0.536 0.607 0.994 1.011 1.385l0.001 0.001c2.174 2.194 7.61 2.082 8.586-1.255 0.113-0.364 0.178-0.782 0.178-1.215 0-0.3-0.031-0.593-0.091-0.875l0.005 0.028zM1.004 1.004h29.991v29.991h-29.991z"></path> </g></svg>',
+    bootstrap: '<svg width="35px" height="35px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path fill-rule="evenodd" clip-rule="evenodd" d="M4.98488 2C3.61546 2 2.60217 3.19858 2.64753 4.49844C2.69105 5.74725 2.63451 7.36461 2.22732 8.68359C1.81892 10.0064 1.1282 10.8444 0 10.952V12.1666C1.1282 12.2742 1.81892 13.1122 2.22732 14.4351C2.63451 15.754 2.69105 17.3714 2.64753 18.6202C2.60217 19.9199 3.61546 21.1186 4.98508 21.1186H19.0169C20.3864 21.1186 21.3995 19.9201 21.3541 18.6202C21.3106 17.3714 21.3671 15.754 21.7743 14.4351C22.1829 13.1122 22.8718 12.2742 24 12.1666V10.952C22.8718 10.8444 22.1829 10.0064 21.7743 8.68359C21.3671 7.36481 21.3106 5.74725 21.3541 4.49844C21.3995 3.19878 20.3864 2 19.0169 2H4.98468H4.98488ZM16.2712 13.7687C16.2712 15.5586 14.9361 16.6441 12.7206 16.6441H8.94915C8.84127 16.6441 8.7378 16.6012 8.66152 16.5249C8.58523 16.4486 8.54237 16.3452 8.54237 16.2373V6.88136C8.54237 6.77347 8.58523 6.67001 8.66152 6.59372C8.7378 6.51743 8.84127 6.47458 8.94915 6.47458H12.6991C14.5464 6.47458 15.7588 7.47525 15.7588 9.01166C15.7588 10.09 14.9433 11.0555 13.9041 11.2245V11.2809C15.3187 11.4361 16.2712 12.4156 16.2712 13.7687ZM12.3094 7.76407H10.1589V10.8015H11.9701C13.3702 10.8015 14.1423 10.2377 14.1423 9.2299C14.1423 8.28556 13.4784 7.76407 12.3094 7.76407ZM10.1589 12.0068V15.3542H12.3885C13.8462 15.3542 14.6184 14.7692 14.6184 13.6699C14.6184 12.5704 13.8246 12.0066 12.2947 12.0066H10.1589V12.0068Z" fill="#fff"></path> </g></svg>',
     tailwind: '<svg width="35px" height="35px" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="#CCCCCC" stroke-width="0.03"></g><g id="SVGRepo_iconCarrier"> <path d="M7.50006 2.5C6.47409 2.5 5.59203 2.77691 4.89966 3.37037C4.21227 3.95956 3.76259 4.81729 3.51314 5.88638C3.45869 6.1197 3.57742 6.35885 3.79619 6.45654C4.01496 6.55423 4.27228 6.483 4.40967 6.28672C4.7263 5.8344 5.04244 5.56261 5.3462 5.42313C5.64038 5.28805 5.95748 5.26068 6.32069 5.35797C6.68723 5.45615 6.97097 5.74369 7.41643 6.22816L7.43082 6.24382C7.76661 6.60905 8.17623 7.0546 8.73649 7.40028C9.31785 7.75898 10.0413 7.99999 11.0001 7.99999C12.026 7.99999 12.9081 7.72307 13.6005 7.12962C14.2878 6.54043 14.7375 5.6827 14.987 4.61361C15.0414 4.38029 14.9227 4.14114 14.7039 4.04345C14.4852 3.94576 14.2278 4.01698 14.0904 4.21326C13.7738 4.66559 13.4577 4.93737 13.1539 5.07686C12.8597 5.21194 12.5426 5.23931 12.1794 5.14202C11.8129 5.04384 11.5291 4.7563 11.0837 4.27182L11.0693 4.25616C10.7335 3.89093 10.3239 3.44538 9.76362 3.09971C9.18227 2.74101 8.45883 2.5 7.50006 2.5Z" fill="#fff"></path> <path d="M4.00006 6.99999C2.97409 6.99999 2.09203 7.2769 1.39966 7.87036C0.712271 8.45955 0.262592 9.31727 0.0131365 10.3864C-0.0413057 10.6197 0.0774162 10.8588 0.296186 10.9565C0.514956 11.0542 0.772276 10.983 0.909673 10.7867C1.2263 10.3344 1.54244 10.0626 1.8462 9.92312C2.14038 9.78804 2.45747 9.76067 2.82069 9.85796C3.18723 9.95614 3.47097 10.2437 3.91643 10.7282L3.93082 10.7438C4.2666 11.109 4.67624 11.5546 5.23649 11.9003C5.81785 12.259 6.54128 12.5 7.50006 12.5C8.52602 12.5 9.40808 12.2231 10.1005 11.6296C10.7878 11.0404 11.2375 10.1827 11.487 9.1136C11.5414 8.88027 11.4227 8.64113 11.2039 8.54343C10.9852 8.44574 10.7278 8.51697 10.5904 8.71325C10.2738 9.16558 9.95768 9.43736 9.65391 9.57684C9.35974 9.71192 9.04264 9.7393 8.67942 9.64201C8.31289 9.54383 8.02915 9.25628 7.58369 8.77181L7.56929 8.75615C7.23351 8.39092 6.82388 7.94537 6.26362 7.59969C5.68227 7.241 4.95883 6.99999 4.00006 6.99999Z" fill="#fff"></path> </g></svg>',
     python: '<svg fill="#ffffff" width="35px" height="35px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <title>python</title> <path d="M19.212 26.447l-0.287 0.412-0.1 0.512 0.1 0.512 0.287 0.412 0.412 0.287 0.512 0.1 0.512-0.1 0.412-0.287 0.287-0.412 0.1-0.512-0.1-0.512-0.287-0.412-0.412-0.287-0.512-0.1-0.512 0.1zM27.297 8.64l0.35 0.075 0.4 0.15 0.437 0.225 0.45 0.337 0.45 0.437 0.437 0.587 0.4 0.737 0.35 0.912 0.262 1.1 0.175 1.3 0.062 1.537-0.075 1.537-0.2 1.3-0.3 1.075-0.4 0.887-0.45 0.712-0.5 0.562-0.525 0.412-0.525 0.3-0.5 0.2-0.45 0.112-0.4 0.062-0.3 0.025-0.2-0.012h-10.272v1.025h7.298l0.012 3.449 0.025 0.45-0.062 0.425-0.137 0.387-0.212 0.362-0.312 0.312-0.387 0.3-0.475 0.25-0.55 0.212-0.637 0.187-0.725 0.162-0.8 0.112-0.887 0.087-0.962 0.050-1.050 0.012-1.587-0.050-1.337-0.175-1.125-0.25-0.912-0.312-0.737-0.375-0.562-0.412-0.425-0.425-0.312-0.425-0.2-0.412-0.125-0.375-0.050-0.312-0.025-0.25 0.012-0.162v-6.673l0.063-0.8 0.162-0.675 0.262-0.575 0.325-0.475 0.375-0.4 0.412-0.3 0.437-0.25 0.437-0.175 0.412-0.125 0.375-0.075 0.325-0.050 0.262-0.025 0.162-0.012h7.298l0.862-0.062 0.737-0.175 0.625-0.262 0.512-0.35 0.412-0.4 0.337-0.437 0.25-0.45 0.187-0.45 0.125-0.437 0.087-0.4 0.050-0.35 0.025-0.262v-3.824h2.612l0.175 0.012zM10.939 3.704l-0.287 0.412-0.1 0.512 0.1 0.512 0.287 0.425 0.412 0.275 0.512 0.112 0.512-0.113 0.412-0.275 0.287-0.425 0.1-0.512-0.1-0.512-0.287-0.412-0.412-0.275-0.512-0.112-0.512 0.112zM18.812 1.229l1.125 0.25 0.912 0.325 0.737 0.375 0.562 0.4 0.425 0.425 0.312 0.425 0.2 0.412 0.125 0.375 0.050 0.325 0.025 0.25-0.012 0.162v6.673l-0.062 0.787-0.162 0.687-0.262 0.575-0.325 0.475-0.375 0.387-0.412 0.312-0.437 0.237-0.437 0.175-0.412 0.125-0.375 0.087-0.325 0.050-0.263 0.025h-7.46l-0.862 0.062-0.737 0.175-0.625 0.275-0.512 0.337-0.412 0.4-0.337 0.437-0.25 0.45-0.187 0.462-0.125 0.437-0.087 0.4-0.050 0.337-0.025 0.262v3.824h-2.787l-0.262-0.037-0.35-0.087-0.4-0.15-0.437-0.225-0.45-0.325-0.45-0.45-0.437-0.575-0.4-0.737-0.35-0.912-0.262-1.1-0.175-1.312-0.062-1.537 0.075-1.524 0.2-1.3 0.3-1.087 0.4-0.887 0.45-0.712 0.5-0.55 0.525-0.412 0.525-0.3 0.5-0.2 0.45-0.125 0.4-0.062 0.3-0.012h0.2l0.075 0.012h10.197v-1.037h-7.298l-0.012-3.436-0.025-0.462 0.062-0.425 0.137-0.387 0.212-0.35 0.312-0.325 0.387-0.287 0.475-0.25 0.55-0.225 0.637-0.187 0.725-0.15 0.8-0.125 0.887-0.075 0.962-0.050 1.050-0.025 1.587 0.063z"></path> </g></svg>',
     github: '<svg width="45px" height="45px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="#ffffff" stroke-width="1.344"> <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.475 2 2 6.475 2 12C2 16.425 4.8625 20.1625 8.8375 21.4875C9.3375 21.575 9.525 21.275 9.525 21.0125C9.525 20.775 9.5125 19.9875 9.5125 19.15C7 19.6125 6.35 18.5375 6.15 17.975C6.0375 17.6875 5.55 16.8 5.125 16.5625C4.775 16.375 4.275 15.9125 5.1125 15.9C5.9 15.8875 6.4625 16.625 6.65 16.925C7.55 18.4375 8.9875 18.0125 9.5625 17.75C9.65 17.1 9.9125 16.6625 10.2 16.4125C7.975 16.1625 5.65 15.3 5.65 11.475C5.65 10.3875 6.0375 9.4875 6.675 8.7875C6.575 8.5375 6.225 7.5125 6.775 6.1375C6.775 6.1375 7.6125 5.875 9.525 7.1625C10.325 6.9375 11.175 6.825 12.025 6.825C12.875 6.825 13.725 6.9375 14.525 7.1625C16.4375 5.8625 17.275 6.1375 17.275 6.1375C17.825 7.5125 17.475 8.5375 17.375 8.7875C18.0125 9.4875 18.4 10.375 18.4 11.475C18.4 15.3125 16.0625 16.1625 13.8375 16.4125C14.2 16.725 14.5125 17.325 14.5125 18.2625C14.5125 19.6 14.5 20.675 14.5 21.0125C14.5 21.275 14.6875 21.5875 15.1875 21.4875C17.1727 20.8173 18.8977 19.5415 20.1198 17.8395C21.3419 16.1376 21.9995 14.0953 22 12C22 6.475 17.525 2 12 2Z" stroke="#ffffff" stroke-linejoin="round"></path> </g><g id="SVGRepo_iconCarrier"> <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.475 2 2 6.475 2 12C2 16.425 4.8625 20.1625 8.8375 21.4875C9.3375 21.575 9.525 21.275 9.525 21.0125C9.525 20.775 9.5125 19.9875 9.5125 19.15C7 19.6125 6.35 18.5375 6.15 17.975C6.0375 17.6875 5.55 16.8 5.125 16.5625C4.775 16.375 4.275 15.9125 5.1125 15.9C5.9 15.8875 6.4625 16.625 6.65 16.925C7.55 18.4375 8.9875 18.0125 9.5625 17.75C9.65 17.1 9.9125 16.6625 10.2 16.4125C7.975 16.1625 5.65 15.3 5.65 11.475C5.65 10.3875 6.0375 9.4875 6.675 8.7875C6.575 8.5375 6.225 7.5125 6.775 6.1375C6.775 6.1375 7.6125 5.875 9.525 7.1625C10.325 6.9375 11.175 6.825 12.025 6.825C12.875 6.825 13.725 6.9375 14.525 7.1625C16.4375 5.8625 17.275 6.1375 17.275 6.1375C17.825 7.5125 17.475 8.5375 17.375 8.7875C18.0125 9.4875 18.4 10.375 18.4 11.475C18.4 15.3125 16.0625 16.1625 13.8375 16.4125C14.2 16.725 14.5125 17.325 14.5125 18.2625C14.5125 19.6 14.5 20.675 14.5 21.0125C14.5 21.275 14.6875 21.5875 15.1875 21.4875C17.1727 20.8173 18.8977 19.5415 20.1198 17.8395C21.3419 16.1376 21.9995 14.0953 22 12C22 6.475 17.525 2 12 2Z" stroke="#ffffff" stroke-linejoin="round"></path> </g></svg>',
@@ -14,33 +16,21 @@ const icons = {
     react: '<svg width="35px" height="35px" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M18.6789 15.9759C18.6789 14.5415 17.4796 13.3785 16 13.3785C14.5206 13.3785 13.3211 14.5415 13.3211 15.9759C13.3211 17.4105 14.5206 18.5734 16 18.5734C17.4796 18.5734 18.6789 17.4105 18.6789 15.9759Z" fill="#fff"></path> <path fill-rule="evenodd" clip-rule="evenodd" d="M24.7004 11.1537C25.2661 8.92478 25.9772 4.79148 23.4704 3.39016C20.9753 1.99495 17.7284 4.66843 16.0139 6.27318C14.3044 4.68442 10.9663 2.02237 8.46163 3.42814C5.96751 4.82803 6.73664 8.8928 7.3149 11.1357C4.98831 11.7764 1 13.1564 1 15.9759C1 18.7874 4.98416 20.2888 7.29698 20.9289C6.71658 23.1842 5.98596 27.1909 8.48327 28.5877C10.9973 29.9932 14.325 27.3945 16.0554 25.7722C17.7809 27.3864 20.9966 30.0021 23.4922 28.6014C25.9956 27.1963 25.3436 23.1184 24.7653 20.8625C27.0073 20.221 31 18.7523 31 15.9759C31 13.1835 26.9903 11.7923 24.7004 11.1537ZM24.4162 19.667C24.0365 18.5016 23.524 17.2623 22.8971 15.9821C23.4955 14.7321 23.9881 13.5088 24.3572 12.3509C26.0359 12.8228 29.7185 13.9013 29.7185 15.9759C29.7185 18.07 26.1846 19.1587 24.4162 19.667ZM22.85 27.526C20.988 28.571 18.2221 26.0696 16.9478 24.8809C17.7932 23.9844 18.638 22.9422 19.4625 21.7849C20.9129 21.6602 22.283 21.4562 23.5256 21.1777C23.9326 22.7734 24.7202 26.4763 22.85 27.526ZM9.12362 27.5111C7.26143 26.47 8.11258 22.8946 8.53957 21.2333C9.76834 21.4969 11.1286 21.6865 12.5824 21.8008C13.4123 22.9332 14.2816 23.9741 15.1576 24.8857C14.0753 25.9008 10.9945 28.557 9.12362 27.5111ZM2.28149 15.9759C2.28149 13.874 5.94207 12.8033 7.65904 12.3326C8.03451 13.5165 8.52695 14.7544 9.12123 16.0062C8.51925 17.2766 8.01977 18.5341 7.64085 19.732C6.00369 19.2776 2.28149 18.0791 2.28149 15.9759ZM9.1037 4.50354C10.9735 3.45416 13.8747 6.00983 15.1159 7.16013C14.2444 8.06754 13.3831 9.1006 12.5603 10.2265C11.1494 10.3533 9.79875 10.5569 8.55709 10.8297C8.09125 9.02071 7.23592 5.55179 9.1037 4.50354ZM20.3793 11.5771C21.3365 11.6942 22.2536 11.85 23.1147 12.0406C22.8562 12.844 22.534 13.6841 22.1545 14.5453C21.6044 13.5333 21.0139 12.5416 20.3793 11.5771ZM16.0143 8.0481C16.6054 8.66897 17.1974 9.3623 17.7798 10.1145C16.5985 10.0603 15.4153 10.0601 14.234 10.1137C14.8169 9.36848 15.414 8.67618 16.0143 8.0481ZM9.8565 14.5444C9.48329 13.6862 9.16398 12.8424 8.90322 12.0275C9.75918 11.8418 10.672 11.69 11.623 11.5748C10.9866 12.5372 10.3971 13.5285 9.8565 14.5444ZM11.6503 20.4657C10.6679 20.3594 9.74126 20.2153 8.88556 20.0347C9.15044 19.2055 9.47678 18.3435 9.85796 17.4668C10.406 18.4933 11.0045 19.4942 11.6503 20.4657ZM16.0498 23.9915C15.4424 23.356 14.8365 22.6531 14.2448 21.8971C15.4328 21.9423 16.6231 21.9424 17.811 21.891C17.2268 22.6608 16.6369 23.3647 16.0498 23.9915ZM22.1667 17.4222C22.5677 18.3084 22.9057 19.1657 23.1742 19.9809C22.3043 20.1734 21.3652 20.3284 20.3757 20.4435C21.015 19.4607 21.6149 18.4536 22.1667 17.4222ZM18.7473 20.5941C16.9301 20.72 15.1016 20.7186 13.2838 20.6044C12.2509 19.1415 11.3314 17.603 10.5377 16.0058C11.3276 14.4119 12.2404 12.8764 13.2684 11.4158C15.0875 11.2825 16.9178 11.2821 18.7369 11.4166C19.7561 12.8771 20.6675 14.4086 21.4757 15.9881C20.6771 17.5812 19.7595 19.1198 18.7473 20.5941ZM22.8303 4.4666C24.7006 5.51254 23.8681 9.22726 23.4595 10.8426C22.2149 10.5641 20.8633 10.3569 19.4483 10.2281C18.6239 9.09004 17.7698 8.05518 16.9124 7.15949C18.1695 5.98441 20.9781 3.43089 22.8303 4.4666Z" fill="#fff"></path> </g></svg>',
     access: '<svg width="35px" height="35px" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><title>file_type_access2</title><path d="M16.639,2.317h1.9V5.092a20.123,20.123,0,0,1,9.237.681c1.111.379,2.32,1.244,2.212,2.568q.019,7.336,0,14.679c.111,1.34-1.13,2.2-2.253,2.574a20.217,20.217,0,0,1-9.2.662v3.427H16.558C11.712,28.8,6.853,27.99,2,27.137V4.869c4.878-.853,9.763-1.683,14.638-2.552" style="fill:#fff"></path><path d="M18.541,6.059a20.047,20.047,0,0,1,8.563.465c.76.283,1.779.624,1.951,1.531-.127.741-.9,1.076-1.511,1.343a19.25,19.25,0,0,1-9,.614V6.059" style="fill:#8b5cf6"></path><path d="M25.058,11.011a8.1,8.1,0,0,0,3.993-1.419c-.07,1.368.108,2.752-.1,4.108a4.4,4.4,0,0,1-2.288,1.152,22.8,22.8,0,0,1-8.127.3V11.023a25.527,25.527,0,0,0,6.517-.013" style="fill:#8b5cf6"></path><path d="M8.5,10.683c.741-.054,1.48-.1,2.224-.162,1.066,3.564,2.078,7.147,3.131,10.714-.735-.048-1.47-.1-2.2-.169-.194-.8-.4-1.591-.611-2.383-.977,0-1.954-.035-2.927-.083q-.282,1.131-.573,2.256-.936-.072-1.865-.134c.929-3.351,1.9-6.689,2.819-10.04" style="fill:#8b5cf6"></path><path d="M8.511,16.882c.321-1.489.8-2.943,1.012-4.455.286,1.508.729,2.978,1.091,4.468q-1.055,0-2.1-.013" style="fill:#fff"></path><path d="M25.077,16.1a8.049,8.049,0,0,0,3.974-1.416c-.064,1.365.1,2.743-.089,4.1a4.3,4.3,0,0,1-2.272,1.155,22.857,22.857,0,0,1-8.149.305V16.114a25.387,25.387,0,0,0,6.536-.016" style="fill:#8b5cf6"></path><path d="M25.065,21.19a8.075,8.075,0,0,0,3.987-1.416c-.067,1.365.105,2.749-.1,4.1-.9.98-2.329,1.161-3.567,1.413a23.386,23.386,0,0,1-6.861.025c.022-1.371.013-2.74.013-4.111a25.292,25.292,0,0,0,6.523-.016" style="fill:#8b5cf6"></path></g></svg>',
     xampp: '<svg fill="#fff" width="35px" height="35px" viewBox="0 0 24 24" role="img" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><title>XAMPP icon</title><path d="M16.792,11.923c0.113,0.043,0.226,0.079,0.334,0.128c0.45,0.203,0.715,0.553,0.748,1.044 c0.041,0.634,0.044,1.271,0.002,1.905c-0.049,0.732-0.725,1.292-1.483,1.271c-0.735-0.021-1.369-0.62-1.397-1.341 c-0.017-0.441-0.003-0.884-0.006-1.326c-0.001-0.239-0.003-0.242-0.245-0.243c-1.363-0.001-2.726,0.008-4.089-0.003 c-0.888-0.007-1.421,0.482-1.471,1.46c-0.019,0.38-0.1,0.727-0.357,1.018c-0.397,0.451-0.898,0.601-1.472,0.466 c-0.554-0.131-0.867-0.522-1.035-1.048c-0.117-0.367-0.056-0.737,0.012-1.094c0.341-1.797,1.366-3.006,3.125-3.555 c0.357-0.112,0.731-0.166,1.105-0.166c0.94,0.001,1.881,0.001,2.821-0.001c0.128,0,0.257-0.012,0.385-0.021 c0.702-0.051,1.166-0.511,1.22-1.352c0.004-0.064,0-0.129,0.001-0.193c0.011-0.788,0.605-1.396,1.393-1.425 c0.787-0.029,1.438,0.527,1.493,1.318c0.076,1.083-0.265,2.046-0.913,2.907C16.903,11.751,16.819,11.816,16.792,11.923z M8.249,10.436c-0.258-0.008-0.571,0.018-0.882-0.035c-0.536-0.09-0.876-0.39-1.02-0.916C6.19,8.912,6.25,8.388,6.698,7.96 C7.154,7.526,7.694,7.4,8.285,7.645c0.52,0.216,0.859,0.731,0.89,1.293C9.2,9.382,9.178,9.828,9.182,10.272 c0.001,0.116-0.043,0.167-0.161,0.165C8.781,10.434,8.542,10.436,8.249,10.436z M21.682,0H2.318C1.102,0,0.116,0.986,0.116,2.202 v19.317c0,1.37,1.111,2.481,2.481,2.481h18.807c1.37,0,2.481-1.111,2.481-2.481V2.202C23.884,0.986,22.898,0,21.682,0z M20.125,12.473c0.519,0.804,0.733,1.69,0.677,2.657c-0.108,1.886-1.413,3.474-3.25,3.916c-2.585,0.623-4.566-0.923-5.233-2.794 c-0.109-0.304-0.16-0.622-0.224-0.985c-0.068,0.414-0.115,0.789-0.264,1.134c-0.697,1.617-1.884,2.603-3.665,2.799 c-2.104,0.232-4.048-1.067-4.632-3.084c-0.25-0.863-0.175-1.747-0.068-2.625c0.08-0.653,0.321-1.268,0.632-1.848 c0.057-0.106,0.057-0.184-0.01-0.285c-0.561-0.845-0.779-1.777-0.7-2.784C3.43,8.035,3.56,7.52,3.805,7.038 C4.52,5.626,6.09,4.427,8.193,4.626c1.849,0.175,3.562,1.77,3.83,3.564c0.013,0.09,0.039,0.178,0.068,0.311 c0.044-0.241,0.076-0.439,0.118-0.636c0.344-1.63,1.94-3.335,4.201-3.357c2.292-0.021,3.99,1.776,4.31,3.446 c0.17,0.888,0.089,1.776-0.103,2.663c-0.112,0.517-0.31,1.008-0.524,1.492C20.034,12.245,20.043,12.345,20.125,12.473z"></path></g></svg>',
-    phpmyadmin: '<svg fill="#fff" width="35px" height="35px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <title>phpmyadmin</title> <path d="M20.804 22.613c-2.973 0.042-5.808 0.573-8.448 1.514l0.183-0.057c-3.584 1.22-3.688 1.685-6.936 1.303-1.718-0.263-3.265-0.75-4.698-1.436l0.1 0.043c1.696 1.366 3.785 2.312 6.071 2.65l0.069 0.008c2.444-0.149 4.708-0.785 6.741-1.812l-0.099 0.045c2.215-0.774 4.768-1.222 7.426-1.222 0.137 0 0.273 0.001 0.409 0.004l-0.020-0c3.437 0.216 6.645 0.763 9.727 1.614l-0.332-0.078c-1.791-0.855-3.889-1.593-6.074-2.107l-0.216-0.043c-1.147-0.27-2.464-0.425-3.817-0.425-0.030 0-0.060 0-0.090 0l0.005-0zM28.568 17.517l-22.394 3.81c1.127 0.399 1.921 1.455 1.921 2.697 0 0.042-0.001 0.084-0.003 0.125l0-0.006c-0.011 0.276-0.058 0.536-0.138 0.783l0.006-0.020c2.266-1.041 4.916-1.918 7.675-2.498l0.25-0.044c1.478-0.336 3.175-0.528 4.917-0.528 1.035 0 2.055 0.068 3.054 0.2l-0.117-0.013c0.908-2.119 2.635-3.741 4.772-4.489l0.057-0.017zM10.052 5.394s3.007 1.332 4.156 6.932c0.236 0.86 0.372 1.848 0.372 2.867 0 1.569-0.321 3.063-0.902 4.42l0.028-0.073c1.648-1.56 3.878-2.518 6.332-2.518 0.854 0 1.68 0.116 2.465 0.333l-0.065-0.015c-0.462-2.86-1.676-5.378-3.431-7.418l0.017 0.020c-2.128-2.674-5.334-4.411-8.95-4.548l-0.022-0.001zM7.831 5.348c1.551 2.219 2.556 4.924 2.767 7.849l0.003 0.051c0.033 0.384 0.051 0.83 0.051 1.281 0 1.893-0.326 3.71-0.926 5.397l0.035-0.113c0.906-1.076 2.215-1.788 3.692-1.902l0.018-0.001c0.062-0.005 0.124-0.008 0.185-0.010 0.083-0.603 0.13-1.3 0.13-2.008 0-2.296-0.498-4.476-1.391-6.437l0.040 0.097c-0.865-1.999-2.516-3.519-4.552-4.19l-0.053-0.015z"></path> </g></svg>',
+    phpmyadmin: '<svg fill="#fff" width="35px" height="35px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <title>phpmyadmin</title> <path d="M20.804 22.613c-2.973 0.042-5.808 0.573-8.448 1.514l0.183-0.057c-3.584 1.22-3.688 1.685-6.936 1.303-1.718-0.263-3.265-0.75-4.698-1.436l0.1 0.043c1.696 1.366 3.785 2.312 6.071 2.65l0.069 0.008c2.444-0.149 4.708-0.785 6.741-1.812l-0.099 0.045c2.215-0.774 4.768-1.222 7.426-1.222 0.137 0 0.273 0.001 0.409 0.004l-0.02-0c3.437 0.216 6.645 0.763 9.727 1.614l-0.332-0.078c-1.791-0.855-3.889-1.593-6.074-2.107l-0.216-0.043c-1.147-0.27-2.464-0.425-3.817-0.425-0.03 0-0.06 0-0.09 0l0.005-0zM28.568 17.517l-22.394 3.81c1.127 0.399 1.921 1.455 1.921 2.697 0 0.042-0.001 0.084-0.003 0.125l0-0.006c-0.011 0.276-0.058 0.536-0.138 0.783l0.006-0.02c2.266-1.041 4.916-1.918 7.675-2.498l0.25-0.044c1.478-0.336 3.175-0.528 4.917-0.528 1.035 0 2.055 0.068 3.054 0.2l-0.117-0.013c0.908-2.119 2.635-3.741 4.772-4.489l0.057-0.017zM10.052 5.394s3.007 1.332 4.156 6.932c0.236 0.86 0.372 1.848 0.372 2.867 0 1.569-0.321 3.063-0.902 4.42l0.028-0.073c1.648-1.56 3.878-2.518 6.332-2.518 0.854 0 1.68 0.116 2.465 0.333l-0.065-0.015c-0.462-2.86-1.676-5.378-3.431-7.418l0.017 0.02c-2.128-2.674-5.334-4.411-8.95-4.548l-0.022-0.001zM7.831 5.348c1.551 2.219 2.556 4.924 2.767 7.849l0.003 0.051c0.033 0.384 0.051 0.83 0.051 1.281 0 1.893-0.326 3.71-0.926 5.397l0.035-0.113c0.906-1.076 2.215-1.788 3.692-1.902l0.018-0.001c0.062-0.005 0.124-0.008 0.185-0.01 0.083-0.603 0.13-1.3 0.13-2.008 0-2.296-0.498-4.476-1.391-6.437l0.04 0.097c-0.865-1.999-2.516-3.519-4.552-4.19l-0.053-0.015z"></path> </g></svg>',
 };
 
-// Skills data
 const skills = [
-    { name: 'VSCode', icon: 'vsc' },
-    { name: 'HTML', icon: 'html' },
-    { name: 'CSS', icon: 'css' },
-    { name: 'JavaScript', icon: 'js' },
-    { name: 'Bootstrap', icon: 'bootstrap' },
-    { name: 'Tailwind CSS', icon: 'tailwind' },
-    { name: 'Python', icon: 'python' },
-    { name: 'GitHub', icon: 'github' },
-    { name: 'Git', icon: 'git' },
-    { name: 'MySQL', icon: 'mysql' },
-    { name: 'JSON', icon: 'json' },
-    { name: 'React.js', icon: 'react' },
-    { name: 'Access', icon: 'access' },
-    { name: 'XAMPP', icon: 'xampp' },
-    { name: 'PHPMyAdmin', icon: 'phpmyadmin' },
+    { name: 'VSCode', icon: 'vsc' }, { name: 'HTML', icon: 'html' }, { name: 'CSS', icon: 'css' },
+    { name: 'JavaScript', icon: 'js' }, { name: 'Bootstrap', icon: 'bootstrap' }, { name: 'Tailwind CSS', icon: 'tailwind' },
+    { name: 'Python', icon: 'python' }, { name: 'GitHub', icon: 'github' }, { name: 'Git', icon: 'git' },
+    { name: 'MySQL', icon: 'mysql' }, { name: 'JSON', icon: 'json' }, { name: 'React.js', icon: 'react' },
+    { name: 'Access', icon: 'access' }, { name: 'XAMPP', icon: 'xampp' }, { name: 'PHPMyAdmin', icon: 'phpmyadmin' },
 ];
 
-// Projects data
 const projects = [
     {
         title: 'Old Portfolio',
-        description: 'An elegantly minimal, pure HTML and CSS personal showcase crafted with precision and intention—no JavaScript involved. Featuring a clean layout, responsive design, and thoughtful typography, this site reflects my early web development skills in structuring content and design cohesively. It’s a polished, lightweight portfolio that demonstrates foundational front‑end expertise.',
+        description: 'An elegantly minimal, pure HTML and CSS personal showcase crafted with precision and intention—no JavaScript involved. Featuring a clean layout, responsive design, and thoughtful typography.',
         technologies: ['HTML', 'CSS'],
         github: 'https://github.com/SN-101/portfolio',
         live: 'https://sn-101.github.io/portfolio/',
@@ -49,8 +39,8 @@ const projects = [
     },
     {
         title: 'CV Online',
-        description: 'Designed and developed an interactive online CV using HTML, CSS, JavaScript, Bootstrap, and JSON. The website is fully responsive and supports multiple languages(Arabic, French, English) via a dynamic JSON- based system.It professionally showcases my skills, education, and experiences.',
-        technologies: ['HTML', 'CSS', 'Javascript', 'JSON'],
+        description: 'Designed and developed an interactive online CV using HTML, CSS, JavaScript, Bootstrap, and JSON. The website is fully responsive and supports multiple languages via a dynamic JSON-based system.',
+        technologies: ['HTML', 'CSS', 'JavaScript', 'JSON'],
         github: 'https://github.com/SN-101/cv-online',
         live: 'https://sn-101.github.io/cv-online/',
         image: 'documents/CV online.webp',
@@ -58,7 +48,7 @@ const projects = [
     },
     {
         title: 'Web Page Game',
-        description: 'A nostalgic web experience that reimagines the simplicity and joy of classic childhood games through a vibrant, interactive interface. This project showcases clean UI design, smooth animations, and engaging user interactions—perfectly blending playful aesthetics with modern web development techniques.',
+        description: 'A nostalgic web experience that reimagines the simplicity and joy of classic childhood games through a vibrant, interactive interface. Showcases clean UI design and smooth animations.',
         technologies: ['HTML', 'CSS', 'JavaScript'],
         github: 'https://github.com/SN-101/Childhood-Game',
         live: 'https://sn-101.github.io/Childhood-Game/',
@@ -67,66 +57,90 @@ const projects = [
     },
     {
         title: 'Municipality ksar Toulal Website',
-        description: 'I helped design and develop the first official website for the Municipality of Ksar Toulal, creating a responsive, multilingual platform in HTML, CSS, JavaScript, and JSON without external frameworks, and continued work beyond my internship, gaining experience in public sector digital transformation.',
+        description: 'Helped design and develop the first official website for the Municipality of Ksar Toulal, creating a responsive, multilingual platform without external frameworks.',
         technologies: ['HTML', 'CSS', 'JavaScript', 'JSON'],
         github: 'https://github.com/Municipality-of-Ksar-Toulal/front-end',
         live: 'https://municipality-of-ksar-toulal.github.io/front-end/',
         image: 'documents/Municipality ksar Toulal.webp',
-        altimg: 'Picture of page Municipality ksar Toulal Website'
+        altimg: 'Picture of Municipality ksar Toulal Website'
     },
     {
         title: 'EPRIM',
-        description: 'I designed and developed an official website for the municipality of Ksar Toulal, where I created a multilingual and responsive platform using React.js, and gained experience in dealing with React.js.',
-        technologies: ['React.js', 'Tailwin CSS', ],
+        description: 'Designed and developed an official website for the municipality of Ksar Toulal, creating a multilingual and responsive platform using React.js and Tailwind CSS.',
+        technologies: ['React.js', 'Tailwind CSS'],
         github: 'https://github.com/SN-101/EPRIM',
         live: 'https://eprim.netlify.app/',
         image: 'documents/EPRIM.webp',
-        altimg: 'Picture of page EPRIM Website'
+        altimg: 'Picture of EPRIM Website'
     },
     {
         title: 'Online Store',
-        description: 'I developed an e-commerce website using HTML Bootstrap and JS. It\'s easy to customize, easy to book, multi-page, and multilingual using JSON, and I optimized its SEO.',
+        description: 'Developed an e-commerce website using HTML, Bootstrap, and JS. Easy to customize, multi-page, multilingual using JSON, and optimized for SEO.',
         technologies: ['HTML', 'CSS', 'Bootstrap', 'JavaScript', 'JSON'],
         github: 'https://github.com/SN-101/Online-Store',
         live: 'https://sn-101.github.io/Online-Store',
         image: 'documents/Online Store.webp',
-        altimg: 'Picture of page Online Store Website'
+        altimg: 'Picture of Online Store Website'
     },
     {
         title: 'Frigo Slimani ERP',
-        description: 'A professional desktop application for managing cold storage facilities, built with Python/PyQt5 and an encrypted SQLite database (AES-256). It includes operations management, PDF invoicing, reporting, and a permissions system. Packaged as a deployable, no-install executable (.exe) file.',
-        technologies: ['Python', 'PyQt5','SQLite', 'AES-256', 'Nuitka'],
+        description: 'A professional desktop application for managing cold storage facilities, built with Python/PyQt5 and an encrypted SQLite database (AES-256). Includes operations management, PDF invoicing, and reporting.',
+        technologies: ['Python', 'PyQt5', 'SQLite', 'AES-256', 'Nuitka'],
         image: 'documents/FrigoSlimaniERP.webp',
-        altimg: 'Dashbord screen'
+        altimg: 'Dashboard screen'
+    },
+    {
+        title: 'Frigo Lahlou ERP',
+        description: 'A comprehensive desktop application designed to automate and streamline cold storage operations, manage client contracts, and track box movements with precision, featuring MySQL integration secured via SSL.',
+        technologies: ['Python', 'PyQt5', 'MySQL', 'SSL', 'Nuitka'],
+        image: 'documents/FrigoLahlouERP.webp',
+        altimg: 'Dashboard screen'
     },
 ];
 
-// DOM elements
-const hamburger = document.getElementById('hamburger');
-const navMenu = document.getElementById('nav-menu');
-const navLinks = document.querySelectorAll('.nav-link');
-const skillsGrid = document.getElementById('skills-grid');
-const projectsGrid = document.getElementById('projects-grid');
-const contactForm = document.getElementById('contact-form');
-
-// Initialize the page
+// =========================================
+// 2. Initialization & Event Listeners
+// =========================================
 document.addEventListener('DOMContentLoaded', function () {
+    // Initialize EmailJS once
+    if (typeof emailjs !== 'undefined') {
+        emailjs.init("vAodR1HFl2lZJYfhe");
+    }
+
     initializeNavigation();
     populateSkills();
     populateProjects();
     initializeScrollAnimations();
     initializeContactForm();
+    initializeDownloadButton();
+    initializeFooterYear();
+    
+    // Run Vivus animation once on load (removed infinite loop for better performance)
+    if (typeof Vivus !== 'undefined') {
+        new Vivus('hero-title-svg', {
+            type: 'delayed',
+            duration: 500,
+            start: 'autostart',
+            animTimingFunction: Vivus.EASE
+        });
+    }
 });
 
-// Navigation functionality
+// =========================================
+// 3. Core Functions
+// =========================================
 function initializeNavigation() {
-    // Mobile menu toggle
+    const hamburger = document.getElementById('hamburger');
+    const navMenu = document.getElementById('nav-menu');
+    const navLinks = document.querySelectorAll('.nav-link');
+
+    if (!hamburger || !navMenu) return;
+
     hamburger.addEventListener('click', function () {
         hamburger.classList.toggle('active');
         navMenu.classList.toggle('active');
     });
 
-    // Close mobile menu when clicking on a link
     navLinks.forEach(link => {
         link.addEventListener('click', function () {
             hamburger.classList.remove('active');
@@ -134,27 +148,28 @@ function initializeNavigation() {
         });
     });
 
-    // Smooth scrolling and active section highlighting
     window.addEventListener('scroll', updateActiveSection);
-    updateActiveSection(); // Initial call
+    updateActiveSection();
 }
 
-// Scroll to section function
 function scrollToSection(sectionId) {
     const element = document.getElementById(sectionId);
     if (element) {
-        const offsetTop = element.offsetTop; // Account for fixed navbar
+        const navHeight = document.getElementById('navbar')?.offsetHeight || 0;
+        const offsetTop = element.offsetTop - navHeight;
         window.scrollTo({
             top: offsetTop,
             behavior: 'smooth'
         });
     }
 }
+// Make it globally available for inline onclick handlers
+window.scrollToSection = scrollToSection;
 
-// Update active navigation section
 function updateActiveSection() {
     const sections = ['home', 'about', 'skills', 'projects', 'contact'];
-    const scrollPosition = window.scrollY + 100;
+    const navHeight = document.getElementById('navbar')?.offsetHeight || 0;
+    const scrollPosition = window.scrollY + navHeight + 50;
 
     sections.forEach(sectionId => {
         const section = document.getElementById(sectionId);
@@ -165,43 +180,31 @@ function updateActiveSection() {
             const sectionHeight = section.offsetHeight;
 
             if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
-                navLinks.forEach(link => link.classList.remove('active'));
+                document.querySelectorAll('.nav-link').forEach(link => link.classList.remove('active'));
                 navLink.classList.add('active');
             }
         }
     });
 }
 
-// Populate skills section
 function populateSkills() {
-    skillsGrid.innerHTML = '';
-
-    skills.forEach((skill, index) => {
-        const skillCard = document.createElement('div');
-        skillCard.className = 'skill-card';
-        skillCard.style.animationDelay = `${index * 100}ms`;
-
-        skillCard.innerHTML = `
-            <div class="skill-icon">
-                    ${icons[skill.icon] || icons.code}
-            </div>
+    const skillsGrid = document.getElementById('skills-grid');
+    if (!skillsGrid) return;
+    
+    skillsGrid.innerHTML = skills.map((skill, index) => `
+        <div class="skill-card" style="animation-delay: ${index * 50}ms">
+            <div class="skill-icon">${icons[skill.icon] || ''}</div>
             <h3 class="skill-name">${skill.name}</h3>
-        `;
-
-        skillsGrid.appendChild(skillCard);
-    });
+        </div>
+    `).join('');
 }
 
-// Populate projects section
 function populateProjects() {
-    projectsGrid.innerHTML = '';
+    const projectsGrid = document.getElementById('projects-grid');
+    if (!projectsGrid) return;
 
-    projects.forEach((project, index) => {
-        const projectCard = document.createElement('div');
-        projectCard.className = 'project-card';
-        projectCard.style.animationDelay = `${index * 200}ms`;
-
-        projectCard.innerHTML = `
+    projectsGrid.innerHTML = projects.map((project, index) => `
+        <div class="project-card" style="animation-delay: ${index * 100}ms">
             <div class="project-image">
                 <img src="${project.image}" alt="${project.altimg}" loading="lazy">
             </div>
@@ -212,78 +215,48 @@ function populateProjects() {
                     ${project.technologies.map(tech => `<span class="tech-tag">${tech}</span>`).join('')}
                 </div>
                 <div class="project-links">
-                    <a href="${project.github}" class="project-link" target="_blank">
-                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
-                        </svg>
+                    ${project.github ? `<a href="${project.github}" class="project-link" target="_blank" rel="noopener noreferrer">
+                        <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
                         <span>Code</span>
-                    </a>
-                    <a href="${project.live}" class="project-link" target="_blank">
-                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
-                            <polyline points="15,3 21,3 21,9"/>
-                            <line x1="10" y1="14" x2="21" y2="3"/>
-                        </svg>
+                    </a>` : ''}
+                    ${project.live ? `<a href="${project.live}" class="project-link" target="_blank" rel="noopener noreferrer">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15,3 21,3 21,9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
                         <span>Live Demo</span>
-                    </a>
+                    </a>` : ''}
                 </div>
             </div>
-        `;
+        </div>
+    `).join('');
+}
 
-        projectsGrid.appendChild(projectCard);
+function initializeDownloadButton() {
+    const downloadBtn = document.getElementById("download-btn");
+    const btnText = document.getElementById("btn-text");
+    const btnIcon = document.getElementById("mysvg");
+
+    if (!downloadBtn) return;
+
+    downloadBtn.addEventListener("click", (e) => {
+        e.preventDefault();
+        
+        // Add animation class
+        downloadBtn.classList.add("is-downloading");
+        
+        // Trigger download
+        const link = document.createElement("a");
+        link.href = "documents/Samir Nassiri CV Resume.pdf";
+        link.download = "CV_Samir_Nassiri.pdf";
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+
+        // Reset button state after 3 seconds
+        setTimeout(() => {
+            downloadBtn.classList.remove("is-downloading");
+        }, 3000);
     });
 }
 
-const downBtn = document.getElementById("download-btn");
-const svgBtn = document.getElementById("mysvg");
-const textBtn = document.getElementById("btn-text");
-const afterElement = document.createElement("span");
-
-function downloadingBtnCv() {
-    downBtn.addEventListener("click", () => {
-        downBtn.style.transform = "translateY(-2px)";
-        downBtn.style.boxShadow = "0 20px 40px -10px rgba(59, 130, 246, 0.5)";
-        downBtn.style.transition = "0.5s linear";
-        textBtn.style.display = "none";
-        svgBtn.style.display = "inline";
-        downBtn.appendChild(afterElement);
-        afterElement.style.content = "";
-        afterElement.style.position = "absolute";
-        afterElement.style.width = "16px";
-        afterElement.style.height = "3px";
-        afterElement.style.backgroundColor = "#242d3b";
-        afterElement.style.marginLeft = "-20px";
-        afterElement.style.animation = "animate 0.7s linear infinite";
-        const element = document.createElement("a");
-        element.href = "documents/Samir Nassiri CV Resume.pdf";
-        element.download = "CV Samir Nassiri.pdf"
-        document.body.appendChild(element);
-        element.click();
-        document.body.removeChild(link);
-    })
-
-    if (!downBtn.contains(afterElement)) {
-        downBtn.appendChild(afterElement);
-    }
-
-    setInterval(() => {
-        downBtn.style.transform = "";
-        downBtn.style.boxShadow = "";
-        downBtn.style.transition = "";
-        textBtn.style.display = "";
-        svgBtn.style.display = "";
-        afterElement.style.position = "";
-        afterElement.style.width = "";
-        afterElement.style.height = "";
-        afterElement.style.backgroundColor = "";
-        afterElement.style.marginLeft = "";
-        afterElement.style.animation = "";
-    }, 5000);
-}
-
-downloadingBtnCv();
-
-// Initialize scroll animations
 function initializeScrollAnimations() {
     const observerOptions = {
         threshold: 0.1,
@@ -293,60 +266,37 @@ function initializeScrollAnimations() {
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
-                if (entry.target.classList.contains('skill-card')) {
-                    entry.target.classList.add('animate');
-                } else if (entry.target.classList.contains('project-card')) {
-                    entry.target.classList.add('animate');
-                }
+                entry.target.classList.add('animate');
+                observer.unobserve(entry.target); // Only animate once
             }
         });
     }, observerOptions);
 
-    // Observe skill cards
-    document.querySelectorAll('.skill-card').forEach(card => {
-        observer.observe(card);
-    });
-
-    // Observe project cards
-    document.querySelectorAll('.project-card').forEach(card => {
+    document.querySelectorAll('.skill-card, .project-card').forEach(card => {
         observer.observe(card);
     });
 }
 
 function initializeContactForm() {
     const contactForm = document.getElementById('contact-form');
+    if (!contactForm) return;
 
     contactForm.addEventListener('submit', function (e) {
         e.preventDefault();
 
-        // Get form data
-        const formData = new FormData(contactForm);
-        const name = formData.get('name');
-        const email = formData.get('email');
-        const message = formData.get('message');
-
-        // Simple validation
-        if (!name || !email || !message) {
-            alert('Please fill in all fields.');
-            return;
-        }
-
-        // Simulate sending state
         const submitBtn = contactForm.querySelector('.submit-btn');
         const originalText = submitBtn.textContent;
+        
         submitBtn.textContent = 'Sending...';
         submitBtn.disabled = true;
 
-        // Initialize EmailJS
-        emailjs.init("vAodR1HFl2lZJYfhe");
-
-        // Send form via EmailJS
-        emailjs.sendForm("service_gtnl9z6", "template_zf30vaz", contactForm)
+        emailjs.sendForm("service_665cu5q", "template_yquyyyq", contactForm)
             .then(function () {
                 alert('Thank you for your message! I\'ll get back to you soon.');
                 contactForm.reset();
             }, function (error) {
-                alert("Failed to send message: " + error.text);
+                alert("Failed to send message. Please try again later.");
+                console.error("EmailJS Error:", error);
             })
             .finally(() => {
                 submitBtn.textContent = originalText;
@@ -355,27 +305,15 @@ function initializeContactForm() {
     });
 }
 
-
-function handWriting() {
-    new Vivus('hero-title-svg', {
-        type: 'delayed',
-        duration: 500,
-        start: 'autostart',
-        animTimingFunction: Vivus.EASE
-    }, function () {
-        setTimeout(() => {
-            handWriting();
-        }, 1000);
-    });
+function initializeFooterYear() {
+    const yearSpan = document.getElementById('current-year');
+    if (yearSpan) {
+        yearSpan.textContent = new Date().getFullYear();
+    }
 }
-handWriting();
 
-
+// Analytics
 window.dataLayer = window.dataLayer || [];
-// Make scrollToSection available globally
-window.scrollToSection = scrollToSection;
-
-// analytics
 function gtag() { dataLayer.push(arguments); }
 gtag('js', new Date());
 gtag('config', 'G-0ZVWNKG7QM');
