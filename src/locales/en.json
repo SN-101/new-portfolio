@@ -1,0 +1,74 @@
+{
+  "meta": {
+    "title": "Samir Nassiri — IT Development Technician | Full-Stack & Desktop Applications",
+    "description": "Portfolio of Samir Nassiri, IT Development Technician from Morocco. Desktop and full-stack applications built with Python, PyQt5, React, Node.js and SQL."
+  },
+  "nav": {
+    "home": "Home", "about": "About", "skills": "Skills", "projects": "Projects", "contact": "Contact",
+    "language": "Language", "theme": "Theme", "light": "Light", "dark": "Dark", "system": "System",
+    "openMenu": "Open menu", "closeMenu": "Close menu", "top": "Back to top", "skip": "Skip to content"
+  },
+  "hero": {
+    "title": "IT Development Technician — Full-Stack & Desktop Applications",
+    "intro": "I design and build business software: desktop ERP systems for cold-storage management and responsive, multilingual web applications.",
+    "roles": [
+      "Desktop applications with Python & PyQt5",
+      "Web interfaces with React & Tailwind CSS",
+      "Databases, PDF reports and data security (AES-256, SSL)"
+    ],
+    "ctaProjects": "View projects",
+    "ctaContact": "Get in touch"
+  },
+  "about": {
+    "title": "About me",
+    "p1": "IT Development Technician with hands-on experience in designing and developing web and desktop applications. Skilled in JavaScript, React, Python, PyQt5, HTML, CSS, Tailwind CSS, SQL, MySQL, and SQLite, with practical experience in database design, REST API development, and application deployment.",
+    "p2": "Experienced in developing business-oriented software solutions, including an ERP system for cold-storage management with customer management, contracts, inventory and crate tracking, user roles, reporting, document generation, and data management.",
+    "p3": "Also experienced in developing multilingual and responsive web applications, with a strong focus on clean UI/UX, usability, performance, and maintainable code. Strong problem-solving skills and a practical approach to transforming business requirements into functional software solutions.",
+    "cv": "Download resume",
+    "cvFallback": "The resume isn't available in this language yet. The English version was downloaded.",
+    "imgAlt": "Portrait of Samir Nassiri"
+  },
+  "skills": {
+    "title": "Skills",
+    "subtitle": "The tools I use to build desktop and web applications.",
+    "groups": { "desktop": "Desktop & packaging", "web": "Web", "data": "Databases", "tools": "Tools" }
+  },
+  "projects": {
+    "title": "Projects",
+    "subtitle": "Selected work, from desktop ERP systems to multilingual websites.",
+    "filters": { "all": "All", "desktop": "Desktop", "web": "Web" },
+    "badges": { "desktop": "Desktop app", "web": "Website" },
+    "code": "Code", "live": "Live demo", "details": "Details", "close": "Close",
+    "noPublic": "Source code and live demo are not publicly available.",
+    "shot": "Screenshot of {{title}}",
+    "items": {
+      "lahlou": { "title": "Frigo Lahlou ERP", "desc": "A comprehensive desktop application designed to automate and streamline cold storage operations, manage client contracts, and track box movements with precision, featuring MySQL integration secured via SSL." },
+      "slimani": { "title": "Frigo Slimani ERP", "desc": "A professional desktop application for managing cold storage facilities, built with Python/PyQt5 and an encrypted SQLite database (AES-256). Includes operations management, PDF invoicing, and reporting." },
+      "eprim": { "title": "EPRIM", "desc": "A multilingual, responsive website built with React.js and Tailwind CSS." },
+      "ksar": { "title": "Municipality of Ksar Toulal", "desc": "Helped design and develop the first official website for the Municipality of Ksar Toulal, creating a responsive, multilingual platform without external frameworks." },
+      "store": { "title": "Online Store", "desc": "Developed an e-commerce website using HTML, Bootstrap, and JS. Easy to customize, multi-page, multilingual using JSON, and optimized for SEO." },
+      "cvOnline": { "title": "CV Online", "desc": "Designed and developed an interactive online CV using HTML, CSS, JavaScript, Bootstrap, and JSON. The website is fully responsive and supports multiple languages via a dynamic JSON-based system." },
+      "game": { "title": "Web Page Game", "desc": "A nostalgic web experience that reimagines the simplicity and joy of classic childhood games through a vibrant, interactive interface. Showcases clean UI design and smooth animations." },
+      "oldPortfolio": { "title": "Old Portfolio", "desc": "An elegantly minimal, pure HTML and CSS personal showcase crafted with precision and intention—no JavaScript involved. Featuring a clean layout, responsive design, and thoughtful typography." }
+    }
+  },
+  "contact": {
+    "title": "Get in touch",
+    "subtitle": "I'm always open to discussing new opportunities and interesting projects. Let's build something great together.",
+    "formTitle": "Send a message",
+    "name": "Full name", "namePh": "Your name",
+    "email": "Email address", "emailPh": "you@example.com",
+    "message": "Message", "messagePh": "Tell me about your project…",
+    "send": "Send message", "sending": "Sending…",
+    "ok": "Message sent. I'll get back to you soon.",
+    "fail": "Couldn't send your message. Try again later or email me directly.",
+    "wait": "Please wait a moment before sending another message.",
+    "direct": "Reach me directly",
+    "labels": { "email": "Email", "github": "GitHub", "linkedin": "LinkedIn", "whatsapp": "WhatsApp" }
+  },
+  "footer": {
+    "description": "IT Development Technician building desktop and full-stack applications.",
+    "rights": "© {{year}} Samir Nassiri. All rights reserved.",
+    "name":"Samir Nassiri"
+  }
+}

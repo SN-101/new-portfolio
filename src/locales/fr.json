@@ -1,0 +1,74 @@
+{
+  "meta": {
+    "title": "Samir Nassiri — Technicien en développement informatique | Applications Full-Stack & Desktop",
+    "description": "Portfolio de Samir Nassiri, technicien en développement informatique au Maroc. Applications desktop et full-stack avec Python, PyQt5, React, Node.js et SQL."
+  },
+  "nav": {
+    "home": "Accueil", "about": "À propos", "skills": "Compétences", "projects": "Projets", "contact": "Contact",
+    "language": "Langue", "theme": "Thème", "light": "Clair", "dark": "Sombre", "system": "Système",
+    "openMenu": "Ouvrir le menu", "closeMenu": "Fermer le menu", "top": "Retour en haut", "skip": "Aller au contenu"
+  },
+  "hero": {
+    "title": "Technicien en développement informatique — Applications Full-Stack & Desktop",
+    "intro": "Je conçois et développe des logiciels métier : des ERP desktop pour la gestion d'entrepôts frigorifiques et des applications web responsives et multilingues.",
+    "roles": [
+      "Applications desktop avec Python & PyQt5",
+      "Interfaces web avec React & Tailwind CSS",
+      "Bases de données, rapports PDF et sécurité des données (AES-256, SSL)"
+    ],
+    "ctaProjects": "Voir mes projets",
+    "ctaContact": "Me contacter"
+  },
+  "about": {
+    "title": "À propos de moi",
+    "p1": "Technicien en développement informatique, avec une expérience concrète dans la conception et le développement d'applications web et desktop. Je maîtrise JavaScript, React, Python, PyQt5, HTML, CSS, Tailwind CSS, SQL, MySQL et SQLite, avec une pratique de la conception de bases de données, du développement d'API REST et du déploiement d'applications.",
+    "p2": "J'ai développé des solutions logicielles métier, dont un ERP de gestion d'entrepôts frigorifiques couvrant la gestion des clients, les contrats, le stock et le suivi des caisses, les rôles utilisateurs, les rapports, la génération de documents et la gestion des données.",
+    "p3": "J'ai également développé des applications web multilingues et responsives, en mettant l'accent sur une interface claire, l'ergonomie, la performance et un code maintenable. J'ai un bon sens de la résolution de problèmes et une approche pragmatique pour transformer les besoins métier en solutions logicielles fonctionnelles.",
+    "cv": "Télécharger mon CV",
+    "cvFallback": "Le CV n'est pas encore disponible dans cette langue. La version anglaise a été téléchargée.",
+    "imgAlt": "Portrait de Samir Nassiri"
+  },
+  "skills": {
+    "title": "Compétences",
+    "subtitle": "Les outils que j'utilise pour créer des applications desktop et web.",
+    "groups": { "desktop": "Desktop & packaging", "web": "Web", "data": "Bases de données", "tools": "Outils" }
+  },
+  "projects": {
+    "title": "Projets",
+    "subtitle": "Une sélection de réalisations, des ERP desktop aux sites web multilingues.",
+    "filters": { "all": "Tous", "desktop": "Desktop", "web": "Web" },
+    "badges": { "desktop": "Application desktop", "web": "Site web" },
+    "code": "Code", "live": "Démo en ligne", "details": "Détails", "close": "Fermer",
+    "noPublic": "Le code source et la démo en ligne ne sont pas publics.",
+    "shot": "Capture d'écran de {{title}}",
+    "items": {
+      "lahlou": { "title": "Frigo Lahlou ERP", "desc": "Application desktop complète pour automatiser et simplifier les opérations de stockage frigorifique, gérer les contrats clients et suivre avec précision les mouvements de caisses, avec une intégration MySQL sécurisée par SSL." },
+      "slimani": { "title": "Frigo Slimani ERP", "desc": "Application desktop professionnelle de gestion d'entrepôts frigorifiques, développée avec Python/PyQt5 et une base SQLite chiffrée (AES-256). Gestion des opérations, facturation PDF et rapports." },
+      "eprim": { "title": "EPRIM", "desc": "Site web multilingue et responsive réalisé avec React.js et Tailwind CSS." },
+      "ksar": { "title": "Commune de Ksar Toulal", "desc": "J'ai participé à la conception et au développement du premier site officiel de la commune de Ksar Toulal : une plateforme responsive et multilingue, sans framework externe." },
+      "store": { "title": "Boutique en ligne", "desc": "Site e-commerce développé avec HTML, Bootstrap et JavaScript. Facile à personnaliser, multi-pages, multilingue via JSON et optimisé pour le SEO." },
+      "cvOnline": { "title": "CV en ligne", "desc": "CV interactif en ligne créé avec HTML, CSS, JavaScript, Bootstrap et JSON. Entièrement responsive et multilingue grâce à un système dynamique basé sur JSON." },
+      "game": { "title": "Jeu web", "desc": "Une expérience web qui revisite la simplicité des jeux d'enfance classiques avec une interface vivante et interactive : UI soignée et animations fluides." },
+      "oldPortfolio": { "title": "Ancien portfolio", "desc": "Un portfolio minimaliste en HTML et CSS purs, sans JavaScript, avec une mise en page claire, responsive et une typographie soignée." }
+    }
+  },
+  "contact": {
+    "title": "Me contacter",
+    "subtitle": "Je suis toujours ouvert aux nouvelles opportunités et aux projets intéressants. Construisons quelque chose de formidable ensemble.",
+    "formTitle": "Envoyer un message",
+    "name": "Nom complet", "namePh": "Votre nom",
+    "email": "Adresse e-mail", "emailPh": "vous@exemple.com",
+    "message": "Message", "messagePh": "Parlez-moi de votre projet…",
+    "send": "Envoyer le message", "sending": "Envoi en cours…",
+    "ok": "Message envoyé. Je vous répondrai bientôt.",
+    "fail": "Impossible d'envoyer votre message. Réessayez plus tard ou écrivez-moi directement par e-mail.",
+    "wait": "Patientez un instant avant d'envoyer un autre message.",
+    "direct": "Me joindre directement",
+    "labels": { "email": "E-mail", "github": "GitHub", "linkedin": "LinkedIn", "whatsapp": "WhatsApp" }
+  },
+  "footer": {
+    "description": "Technicien en développement informatique — applications desktop et full-stack.",
+    "rights": "© {{year}} Samir Nassiri. Tous droits réservés.",
+    "name":"Samir Nassiri"
+  }
+}

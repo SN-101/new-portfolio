@@ -1,0 +1,83 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ---------- Design tokens (RGB triplets so Tailwind can add opacity) ---------- */
+:root {
+  --bg: 246 247 251;
+  --surface: 255 255 255;
+  --fg: 15 23 42;
+  --muted: 100 116 139;
+  --line: 226 232 240;
+  --brand: 37 99 235;
+  --brand2: 124 58 237;
+  color-scheme: light;
+}
+.dark {
+  --bg: 7 10 20;
+  --surface: 14 19 34;
+  --fg: 241 245 249;
+  --muted: 148 163 184;
+  --line: 31 41 66;
+  --brand: 96 165 250;
+  --brand2: 167 139 250;
+  color-scheme: dark;
+}
+
+@layer base {
+  html { scroll-behavior: smooth; scroll-padding-top: 5rem; }
+  body { @apply bg-bg font-sans text-fg antialiased; text-rendering: optimizeLegibility; }
+  html[lang='ar'] body { font-family: 'Cairo Variable', 'Manrope Variable', system-ui, sans-serif; line-height: 1.75; }
+  ::selection { background: rgb(var(--brand) / 0.25); }
+  :focus-visible { outline: 2px solid rgb(var(--brand)); outline-offset: 3px; border-radius: 6px; }
+  img { @apply select-none; }
+}
+
+/* ---------- Theme switch: circular reveal (View Transitions API) ---------- */
+::view-transition-old(root),
+::view-transition-new(root) { animation: none; mix-blend-mode: normal; }
+::view-transition-old(root) { z-index: 1; }
+::view-transition-new(root) { z-index: 2; }
+
+/* ---------- Hero: hand-drawn signature (the one orchestrated moment) ---------- */
+.sig svg { display: block; width: 100%; height: auto; overflow: visible; }
+.sig path {
+  fill: currentColor; fill-opacity: 0;
+  stroke: currentColor; stroke-width: 0.8; stroke-dasharray: 1; stroke-dashoffset: 1;
+  animation: sig-draw 2.3s cubic-bezier(0.55, 0.05, 0.2, 1) 0.25s forwards,
+             sig-fill 0.9s ease 2.15s forwards;
+}
+@keyframes sig-draw { to { stroke-dashoffset: 0; } }
+@keyframes sig-fill { to { fill-opacity: 1; stroke-opacity: 0; } }
+
+.hero-grid {
+  background-image:
+    linear-gradient(rgb(var(--line) / 0.7) 1px, transparent 1px),
+    linear-gradient(90deg, rgb(var(--line) / 0.7) 1px, transparent 1px);
+  background-size: 56px 56px;
+  -webkit-mask-image: radial-gradient(ellipse 70% 60% at 30% 40%, #000 25%, transparent 78%);
+  mask-image: radial-gradient(ellipse 70% 60% at 30% 40%, #000 25%, transparent 78%);
+}
+.hero-spot {
+  background: radial-gradient(520px circle at var(--sx, 30%) var(--sy, 35%), rgb(var(--brand) / 0.16), transparent 62%);
+}
+
+/* ---------- Project cards: 3D tilt + cursor spotlight (mouse only) ---------- */
+.tilt {
+  transform: perspective(1000px) rotateX(var(--rx, 0deg)) rotateY(var(--ry, 0deg));
+  transition: transform 0.25s ease-out, border-color 0.3s, box-shadow 0.3s;
+  will-change: transform;
+}
+.tilt::after {
+  content: ''; position: absolute; inset: 0; border-radius: inherit; pointer-events: none; opacity: 0;
+  background: radial-gradient(380px circle at var(--mx, 50%) var(--my, 50%), rgb(var(--brand) / 0.14), transparent 45%);
+  transition: opacity 0.3s;
+}
+.tilt:hover { border-color: rgb(var(--brand) / 0.55); box-shadow: 0 24px 50px -24px rgb(var(--brand) / 0.45); }
+.tilt:hover::after { opacity: 1; }
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .sig path { animation: none; stroke-dashoffset: 0; fill-opacity: 1; stroke-opacity: 0; }
+  .tilt { transform: none !important; }
+}
